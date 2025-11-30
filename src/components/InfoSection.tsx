@@ -56,16 +56,16 @@ const infoCards = [
 
 export const InfoSection = () => {
   return (
-    <section className="py-20 bg-muted/50">
+    <section className="py-20 bg-muted/50" aria-labelledby="info-heading">
       <div className="container px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">
+        <header className="max-w-3xl mx-auto text-center mb-16">
+          <h2 id="info-heading" className="text-4xl font-bold mb-4">
             Understanding Video Game Addiction
           </h2>
           <p className="text-xl text-muted-foreground">
             Education is the first step toward recovery. Learn about the signs, impacts, and pathways to healing.
           </p>
-        </div>
+        </header>
         
         <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
           {infoCards.map((card, index) => {

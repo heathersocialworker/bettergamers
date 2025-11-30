@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,14 +15,15 @@ export const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50">
+    <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50" role="navigation" aria-label="Main navigation">
       <div className="container px-4">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center gap-2">
-            <div className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          <a href="#home" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+            <img src={logo} alt="Better Gamers App Logo" className="h-10 w-10 object-contain" />
+            <div className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               Better Gamers
             </div>
-          </div>
+          </a>
 
           <div className="hidden md:flex items-center gap-6">
             {navItems.map((item) => (
