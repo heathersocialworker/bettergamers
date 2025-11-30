@@ -1,15 +1,19 @@
-import { Instagram, Mail } from "lucide-react";
+import { Instagram, Mail, Facebook } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 export const Footer = () => {
   return (
-    <footer className="bg-muted py-12">
+    <footer className="bg-muted py-12" role="contentinfo">
       <div className="container px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h3 className="text-lg font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Better Gamers
-              </h3>
+              <div className="flex items-center gap-2 mb-4">
+                <img src={logo} alt="Better Gamers App Logo" className="h-8 w-8 object-contain" />
+                <h3 className="text-lg font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                  Better Gamers
+                </h3>
+              </div>
               <p className="text-sm text-muted-foreground">
                 Supporting recovery and healthy relationships with gaming through education, resources, and professional help.
               </p>
@@ -51,15 +55,24 @@ export const Footer = () => {
                 href="https://www.instagram.com/bettergamersapp/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-foreground transition-colors"
-                aria-label="Instagram"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Follow us on Instagram"
               >
                 <Instagram className="h-5 w-5" />
               </a>
               <a
+                href="https://www.facebook.com/profile.php?id=61562010930851"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Follow us on Facebook"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a
                 href="mailto:contact@bettergamers.com"
-                className="text-muted-foreground hover:text-foreground transition-colors"
-                aria-label="Email"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Email us"
               >
                 <Mail className="h-5 w-5" />
               </a>
