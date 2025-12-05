@@ -46,9 +46,10 @@ export const Footer = () => {
           </div>
           
           <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-muted-foreground">
-              © 2024 Better Gamers. All rights reserved.
-            </p>
+            <div className="text-sm text-muted-foreground">
+              <p>© 2024 Better Gamers App. All rights reserved.</p>
+              <p className="mt-1">Serving video game addiction recovery nationwide | Telehealth available</p>
+            </div>
             
             <div className="flex items-center gap-4">
               <a
