@@ -4,6 +4,7 @@ import { InfoSection } from "@/components/InfoSection";
 import { CrisisResources } from "@/components/CrisisResources";
 import { DetoxPrograms } from "@/components/DetoxPrograms";
 import { TherapistDirectory } from "@/components/TherapistDirectory";
+import { Testimonials } from "@/components/Testimonials";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
@@ -11,21 +12,24 @@ const Index = () => {
     <div className="min-h-screen">
       <Navigation />
       <main>
-        <div id="home">
+        <section id="home" aria-label="Hero section">
           <Hero />
-        </div>
-        <div id="about">
+        </section>
+        <section id="about" aria-label="About video game addiction">
           <InfoSection />
-        </div>
-        <div id="resources">
+        </section>
+        <section id="resources" aria-label="Crisis resources and hotlines">
           <CrisisResources />
-        </div>
-        <div id="programs">
+        </section>
+        <section id="programs" aria-label="Video game detox and treatment programs">
           <DetoxPrograms />
-        </div>
-        <div id="therapist">
+        </section>
+        <section id="therapist" aria-label="Find video game addiction therapists near you">
           <TherapistDirectory />
-        </div>
+        </section>
+        <section id="testimonials" aria-label="Recovery success stories and testimonials">
+          <Testimonials />
+        </section>
       </main>
       <Footer />
     </div>
