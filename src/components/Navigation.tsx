@@ -15,8 +15,8 @@ export const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50" role="navigation" aria-label="Main navigation">
-      <div className="container px-4">
+    <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50 pt-[env(safe-area-inset-top)]" role="navigation" aria-label="Main navigation">
+      <div className="container px-4 pl-[max(1rem,env(safe-area-inset-left))] pr-[max(1rem,env(safe-area-inset-right))]">
         <div className="flex items-center justify-between h-16">
           <a href="#home" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <img src={logo} alt="Better Gamers App Logo" className="h-10 w-10 object-contain" />

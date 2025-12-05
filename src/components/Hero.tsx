@@ -4,7 +4,7 @@ import logo from "@/assets/logo.png";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-muted to-background overflow-hidden" role="banner">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-muted to-background overflow-hidden pt-[calc(4rem+env(safe-area-inset-top))]" role="banner">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(var(--teal-glow)/0.15),transparent_50%)]" aria-hidden="true" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,hsl(var(--sea-green)/0.15),transparent_50%)]" aria-hidden="true" />
       

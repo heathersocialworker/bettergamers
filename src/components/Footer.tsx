@@ -3,8 +3,8 @@ import logo from "@/assets/logo.png";
 
 export const Footer = () => {
   return (
-    <footer className="bg-muted py-12" role="contentinfo">
-      <div className="container px-4">
+    <footer className="bg-muted py-12 pb-[calc(3rem+env(safe-area-inset-bottom))]" role="contentinfo">
+      <div className="container px-4 pl-[max(1rem,env(safe-area-inset-left))] pr-[max(1rem,env(safe-area-inset-right))]">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
