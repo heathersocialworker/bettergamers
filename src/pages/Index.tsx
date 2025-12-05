@@ -5,6 +5,10 @@ import { CrisisResources } from "@/components/CrisisResources";
 import { DetoxPrograms } from "@/components/DetoxPrograms";
 import { TherapistDirectory } from "@/components/TherapistDirectory";
 import { Testimonials } from "@/components/Testimonials";
+import { FAQSection } from "@/components/FAQSection";
+import { BlogCTA } from "@/components/BlogCTA";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
+import { SocialShare } from "@/components/SocialShare";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
@@ -30,6 +34,10 @@ const Index = () => {
         <section id="testimonials" aria-label="Recovery success stories and testimonials">
           <Testimonials />
         </section>
+        <FAQSection />
+        <BlogCTA />
+        <SocialShare />
+        <NewsletterSignup />
       </main>
       <Footer />
     </div>
