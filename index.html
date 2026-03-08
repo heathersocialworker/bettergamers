@@ -254,6 +254,92 @@
     }
     </script>
 
+    <!-- Schema.org - HealthTopicContent for AI Discovery -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HealthTopicContent",
+      "name": "Video Game Addiction Recovery Guide",
+      "description": "Comprehensive guide to understanding, treating, and recovering from video game addiction (Internet Gaming Disorder). Includes therapist directory, detox programs, and crisis resources.",
+      "url": "https://bettergamersapp.com/",
+      "hasHealthAspect": ["CausesHealthAspect", "SymptomsHealthAspect", "TreatmentsHealthAspect", "PreventionHealthAspect"],
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Internet Gaming Disorder",
+        "alternateName": ["Video Game Addiction", "Gaming Disorder", "Problematic Gaming"],
+        "code": {
+          "@type": "MedicalCode",
+          "codeValue": "6C51",
+          "codingSystem": "ICD-11"
+        }
+      },
+      "dateModified": "2026-03-08",
+      "inLanguage": "en-US",
+      "isAccessibleForFree": true,
+      "publisher": {"@id": "https://bettergamersapp.com/#organization"}
+    }
+    </script>
+
+    <!-- Schema.org - Service for Therapist Directory -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Gaming Addiction Therapist Directory",
+      "description": "Free directory connecting individuals with certified therapists specializing in video game addiction and Internet Gaming Disorder treatment across all 50 US states.",
+      "provider": {"@id": "https://bettergamersapp.com/#organization"},
+      "serviceType": "Mental Health Resource Directory",
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "audience": {
+        "@type": "PeopleAudience",
+        "audienceType": "Individuals seeking gaming addiction treatment"
+      },
+      "isRelatedTo": [
+        {"@type": "MedicalTherapy", "name": "Cognitive Behavioral Therapy"},
+        {"@type": "MedicalTherapy", "name": "Motivational Interviewing"},
+        {"@type": "MedicalTherapy", "name": "Family Therapy"}
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Treatment Options",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Telehealth Therapy Sessions"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "In-Person Therapy"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Residential Treatment Programs"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Outpatient Detox Programs"}}
+        ]
+      }
+    }
+    </script>
+
+    <!-- Schema.org - SpeakableSpecification for AI voice responses -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Better Gamers App - Video Game Addiction Recovery",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#about", "#resources", "#faq"]
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Gaming Addiction Recovery Resources",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Understanding Gaming Addiction", "url": "https://bettergamersapp.com/#about"},
+          {"@type": "ListItem", "position": 2, "name": "Crisis Support (988 Lifeline)", "url": "https://bettergamersapp.com/#resources"},
+          {"@type": "ListItem", "position": 3, "name": "Detox & Treatment Programs", "url": "https://bettergamersapp.com/#programs"},
+          {"@type": "ListItem", "position": 4, "name": "Find a Therapist Near You", "url": "https://bettergamersapp.com/#therapist"},
+          {"@type": "ListItem", "position": 5, "name": "Recovery Testimonials", "url": "https://bettergamersapp.com/#testimonials"},
+          {"@type": "ListItem", "position": 6, "name": "FAQ", "url": "https://bettergamersapp.com/#faq"}
+        ]
+      }
+    }
+    </script>
+
     <!-- Schema.org - Review/Testimonial Aggregate -->
     <script type="application/ld+json">
     {
